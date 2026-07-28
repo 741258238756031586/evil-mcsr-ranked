@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "evilmcsr",
+  "version": "${version}",
+  "name": "Evil MCSR Ranked",
+  "description": "claude make me an anticheat",
+  "authors": ["EVIL RedLime", "EVIL OliverMCSR", "EVIL Void_X_Walker", "EVIL DylanDC14", "EVIL Quesia", "notmeower"],
+  "contact": {},
+  "icon": "icon.png",
+  "license": "UNLICENSE",
+  "environment": "client",
+  "entrypoints": {
+    "afl:prePrePreLaunch": [
+      "com.notmeower.mcsrranked.EvilMCSR"
+    ]
+  },
+  "mixins": [
+    "evilmcsr.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}

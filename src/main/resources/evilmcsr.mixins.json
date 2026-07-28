@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.notmeower.mcsrranked.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "UUIDUtilsMixin",
+    "ModVerifierMixin",
+    "MCSRRankedClientMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
